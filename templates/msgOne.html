@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <form method="POST" action="/msg_update">
+        <table border="1">
+            <tr>
+                <td>
+                    msg_id: <input type="text" name="msg_id" readonly="readonly" value="{{msg_id}}">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    msg_text: <input type="text" name="msg_text">
+                </td>
+            </tr>
+        </table>
+            <div>
+                <button type="submit">수정 완료</button>
+            </div>
+    </form>
+</html>

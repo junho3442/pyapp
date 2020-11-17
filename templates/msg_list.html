@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>hello</h1>
+        <table border="1">
+            <tr>
+                <th>msg_id</th>
+                <th>msg_text</th>
+                <th>삭제</th>
+                <th>수정</th>
+            </tr>
+
+           
+                {% for row in msglist %}
+                    <tr>    
+                        <td>{{row[0]}}</td>
+                        <td>{{row[1]}}</td>
+                        <td><a href="/del_msg?msg_id={{row[0]}}">삭제</td>
+                        <td>수정</td>
+                    </tr>
+
+                {% endfor %}
+            
+        </table>
+        <a href="/add_msg">추가</a>
+    </body>
+
+</html>
